@@ -1,0 +1,190 @@
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+  --ff: "Libre Franklin", sans-serif;
+  --ff-weight-s: 300;
+  --ff-weight-m: 600;
+  --ff-weight-l: 700;
+  --opacity-s: 0.4;
+  --opacity-m: 0.6;
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* resets end */
+body {
+  font-size: 0.9rem;
+  font-family: var(--ff);
+}
+
+header {
+  padding: 5.2rem 0 3.8rem;
+}
+
+.header__logo {
+  width: 13%;
+  margin: 0 auto;
+}
+
+.form {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.form__text {
+  padding-bottom: 1.4rem;
+}
+.form__text-h1 {
+  font-weight: var(--ff-weight-l);
+  margin: 1.6rem auto 0.4rem;
+}
+.form__text-p {
+  opacity: var(--opacity-m);
+  font-weight: var(--ff-weight-m);
+}
+span.opacity {
+  font-weight: var(--ff-weight-s);
+  color: var(--Gray);
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+}
+.text-field {
+  border: 1px solid black;
+  padding: 0.5rem 2rem;
+  border: 1px solid var(--Pale-Blue);
+}
+::placeholder {
+  opacity: var(--opacity-s);
+  color: var(--Blue);
+}
+.button {
+  border: none;
+  padding: 0.7rem 1rem;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  background-color: var(--Blue);
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: var(--ff-weight-m);
+  box-shadow: 0px 8px 8px hsla(223, 87%, 63%, 0.342);
+}
+.text-field,
+.button {
+  border-radius: 40px;
+}
+figure img {
+  width: 90%;
+  margin: 0 auto;
+}
+footer {
+  padding: 9rem 0 3rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1rem;
+  place-items: center;
+}
+
+.font-aws,
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-wrapper {
+  border-radius: 50%;
+  border: 1px solid hsla(223, 100%, 88%, 0.815);
+  font-size: 1.2rem;
+  width: 45px;
+  height: 45px;
+}
+.icon-wrapper i {
+  color: var(--Blue);
+}
+.icon-wrapper + .icon-wrapper {
+  margin-left: 1rem;
+}
+small {
+  opacity: var(--opacity-m);
+  color: var(--Gray);
+}
+.attribution {
+  opacity: var(--opacity-m);
+  color: var(--Gray);
+  align-self: end;
+}
