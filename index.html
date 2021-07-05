@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/f1ee426c55.js"
       crossorigin="anonymous"
@@ -40,7 +40,7 @@
   <body>
     <header>
       <img class="header__logo" src="/images/logo.svg" alt="" />
-      <form class="form validate">
+      <form class="form validate" novalidate>
         <div class="form__text">
           <h1 class="form__text-h1">
             <span class="opacity">We are launching</span> soon!
@@ -50,17 +50,19 @@
         <div class="form__inputs">
           <input
             class="text-field"
+            name="email-address"
             type="email"
-            placeholder="Your email address.."
-            required
+            placeholder="The szechuan sauce morty!..."
           />
+          <span class="error hidden">Please provide a valid email address</span>
           <input class="button" value="Notify Me" type="submit" />
         </div>
       </form>
+      <div class="thank-you hidden">thank you for your feedback!</div>
     </header>
     <figure class="img">
       <img
-        src="/images/illustration-dashboard.png"
+        src="images/illustration-dashboard.png"
         alt="hero image"
         class="hero-img"
       />
@@ -83,6 +85,6 @@
         >.
       </p>
     </footer>
-    <script src="/app.js"></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
