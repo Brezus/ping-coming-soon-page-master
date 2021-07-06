@@ -39,8 +39,8 @@
   </head>
   <body>
     <header>
-      <img class="header__logo" src="/images/logo.svg" alt="" />
-      <form class="form validate" novalidate>
+      <a href="#"><img class="header__logo" src="/images/logo.svg" alt="" /></a>
+      <form class="form validate" id="form" novalidate>
         <div class="form__text">
           <h1 class="form__text-h1">
             <span class="opacity">We are launching</span> soon!
@@ -49,30 +49,41 @@
         </div>
         <div class="form__inputs">
           <input
-            class="text-field"
+            class="email"
             name="email-address"
             type="email"
+            id="email"
             placeholder="The szechuan sauce morty!..."
           />
-          <span class="error hidden">Please provide a valid email address</span>
+          <span class="error-message hidden"
+            >Please provide a valid email address</span
+          >
           <input class="button" value="Notify Me" type="submit" />
         </div>
       </form>
-      <div class="thank-you hidden">thank you for your feedback!</div>
+      <!-- <div class="thank-you hidden">thank you for your feedback!</div> -->
     </header>
+    <!-- end of form and header -->
     <figure class="img">
-      <img
-        src="images/illustration-dashboard.png"
-        alt="hero image"
-        class="hero-img"
-      />
+      <a href="#">
+        <img
+          src="images/illustration-dashboard.png"
+          alt="hero image"
+          class="hero-img"
+      /></a>
     </figure>
 
     <footer>
       <div class="font-aws">
-        <div class="icon-wrapper"><i class="fab fa-facebook-f"></i></div>
-        <div class="icon-wrapper"><i class="fab fa-twitter"></i></div>
-        <div class="icon-wrapper"><i class="fab fa-instagram"></i></div>
+        <a href="#"
+          ><div class="icon-wrapper"><i class="fab fa-facebook-f"></i></div
+        ></a>
+        <a href="#"
+          ><div class="icon-wrapper"><i class="fab fa-twitter"></i></div
+        ></a>
+        <a href="#"
+          ><div class="icon-wrapper"><i class="fab fa-instagram"></i></div
+        ></a>
       </div>
       <small>&copy; Copyright Ping. All rights reserved.</small>
       <p class="attribution">
